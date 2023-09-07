@@ -253,6 +253,12 @@ footer .footermenu a {
   gap: 11px;
   text-decoration: none;
 }
+footer .footermenu a.large {
+  width: 191px;
+}
+footer .footermenu a.smal {
+  width: 153px;
+}
 footer .footermenu a i {
   font-size: 13px;
   width: 13px;
@@ -265,6 +271,33 @@ footer .footermenu a h3 {
   line-height: normal;
 }
 
+@media (min-width: 1080px) {
+  footer {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 30px 25px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  footer .footermenu {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    gap: 7px;
+  }
+}
 .heart__icon {
   position: relative;
   display: -webkit-box;
