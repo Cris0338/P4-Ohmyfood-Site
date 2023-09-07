@@ -1,41 +1,14 @@
-@import 'reset';
-@import 'colors';
-@import 'fonts';
-@import 'header';
-@import 'howto';
-@import 'restaurantscards';
-@import 'footer';
-@import 'heart';
+@import 'shared/reset';
+@import 'shared/colors';
+@import 'shared/fonts';
+@import 'shared/header';
+@import 'index/howto';
+@import 'index/restaurantscards';
+@import 'shared/footer';
+@import 'shared/heart';
 
 // Settings
 
-header {
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-    a {
-        color: $black-2;
-        text-decoration: none;
-        font-family: $font-logo;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    @media (max-width: 1024px) {
-        .imglogo {
-            display: none;
-        }
-    }
-
-    @media (min-width: 1024px) {
-        .txtlogo {
-            display: none;
-        }
-    }
-}
 
 // Restaurants Cards
 

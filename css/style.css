@@ -8,34 +8,65 @@ h1, h2, h3 {
   padding: 0;
 }
 
-@media (max-width: 768px) {
-  .backbtn {
-    margin: 0;
-    padding: 0;
-    border: none;
-    background-color: #ffffff;
-  }
-  h1 {
-    font-family: "Shrikhand";
+html {
+  width: 100%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header a {
+  color: #101010;
+  text-decoration: none;
+  font-family: "Shrikhand";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 1079px) {
+  header .imglogo {
+    display: none;
   }
 }
-@media (max-width: 1024px) {
-  .backbtn {
-    margin: 0;
-    padding: 0;
-    border: none;
-    background-color: #ffffff;
+@media (min-width: 1080px) {
+  header .txtlogo {
+    display: none;
   }
 }
-@media (max-width: 1440px) {
-  .backbtn {
-    margin: 0;
-    padding: 0;
-    border: none;
-    background-color: #ffffff;
-  }
-}
+
 .howto {
+  width: 100%;
   height: 440px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -44,18 +75,82 @@ h1, h2, h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  gap: 26px;
+}
+.howto h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.howto .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 25px;
+}
+.howto .container .stepstiles {
+  width: 334.5px;
+  height: 72.5px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.howto .container .stepstiles .circle {
+  position: absolute;
+  margin-top: 24px;
+  margin-left: 0px;
+  z-index: 1;
+  width: 24px;
+  height: 24px;
+  background: #9356dc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 26px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
 }
-.howto .labels {
+.howto .container .stepstiles a {
+  text-decoration: none;
+  color: #000000;
+}
+.howto .container .stepstiles a .tiles {
   width: 322.5px;
   height: 72.5px;
   background-color: #F6F6F6;
   padding: 0 35.5px;
   border-radius: 20px;
-  position: relative;
+  position: absolute;
+  margin-top: 0px;
+  margin-left: 12px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -63,17 +158,44 @@ h1, h2, h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 20px;
+  gap: 27px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+.howto .container .stepstiles a .tiles i {
+  width: 13px;
+}
+.howto .container .stepstiles a :hover {
+  color: #9356dc;
+  -webkit-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+          box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
 }
 
+@media (min-width: 1080px) {
+  .howto {
+    height: 128px;
+    padding: 50px 180px;
+    gap: 25px;
+  }
+  .howto .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .howto .container .stepstiles {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 36.5px;
+  }
+}
 .restaurants {
   background-color: #F6F6F6;
 }
@@ -178,44 +300,6 @@ footer .footermenu a h3 {
   opacity: 0;
   -webkit-transition: all 600ms;
   transition: all 600ms;
-}
-
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-header a {
-  color: #101010;
-  text-decoration: none;
-  font-family: "Shrikhand";
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-@media (max-width: 1024px) {
-  header .imglogo {
-    display: none;
-  }
-}
-@media (min-width: 1024px) {
-  header .txtlogo {
-    display: none;
-  }
 }
 
 .restaurants {

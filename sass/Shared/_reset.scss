@@ -1,0 +1,19 @@
+html,
+header,
+body,
+footer,
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
