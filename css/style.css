@@ -46,8 +46,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   gap: 42px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 .header .backbtn {
   width: 30px;
@@ -55,8 +53,6 @@ body {
   margin: 0;
   padding: 0;
   border: none;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   background-color: #ffffff;
 }
 .header a {
@@ -74,8 +70,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 @media (max-width: 1079px) {
   .header .imglogo {
