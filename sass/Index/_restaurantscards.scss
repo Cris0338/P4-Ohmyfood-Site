@@ -13,13 +13,17 @@
     }
 
     .restaurants__cards {
+        width: 340px;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         align-content: center;
         gap: 18px;
+        box-sizing: border-box;
+
 
         .card {
+            box-sizing: border-box;
             z-index: 0;
             width: 340px;
             height: 251px;
@@ -95,6 +99,13 @@
             }
 
 
+        }
+    }
+
+
+    @media (min-width: 1080px) {
+        .restaurants__cards {
+            flex-direction: row;
         }
     }
 }
