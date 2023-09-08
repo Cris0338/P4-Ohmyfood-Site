@@ -1,16 +1,35 @@
-header {
-
+.header {
+    width: 100%;
+    padding: 14px 89px 13px 17px;
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
+    gap: 42px;
+    box-sizing: border-box;
+
+
+    .backbtn {
+        width: 30px;
+        font-size: x-large;
+        margin: 0;
+        padding: 0;
+        border: none;
+        box-sizing: border-box;
+        background-color: $white-1;
+    }
 
     a {
+        padding: 0 19px 0 16px;
         color: $black-2;
         text-decoration: none;
         font-family: $font-logo;
         display: flex;
         flex-direction: row;
         align-items: center;
+        box-sizing: border-box;
+
     }
 
     @media (max-width: 1079px) {
