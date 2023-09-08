@@ -65,6 +65,101 @@ header a {
   }
 }
 
+.location {
+  width: 100%;
+  height: 50px;
+  background-color: #eaeaea;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 17px;
+}
+.location .poi {
+  color: #353535;
+}
+.location .input {
+  display: block;
+  width: 7em;
+  color: #353535;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.location ::-webkit-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #353535;
+  opacity: 1;
+  /* Firefox */
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+.location ::-moz-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #353535;
+  opacity: 1;
+  /* Firefox */
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+.location :-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #353535;
+  opacity: 1;
+  /* Firefox */
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+.location ::-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #353535;
+  opacity: 1;
+  /* Firefox */
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+.location ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #353535;
+  opacity: 1;
+  /* Firefox */
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+.location :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #353535;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+.location ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #353535;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
 .howto {
   width: 100%;
   height: 440px;
@@ -209,6 +304,8 @@ header a {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
   gap: 25px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -227,8 +324,6 @@ header a {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-line-pack: center;
-      align-content: center;
   gap: 18px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
