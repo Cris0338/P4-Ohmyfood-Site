@@ -29,8 +29,8 @@
           animation-name: disappearance;
   -webkit-animation-duration: 1s;
           animation-duration: 1s; /* transition time */
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s; /* transition delay after start */
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s; /* transition delay after start */
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -422,6 +422,43 @@ body {
           align-items: center;
 }
 
+.heart__icon {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 16px;
+}
+.heart__icon--empty {
+  position: absolute;
+  color: black;
+}
+.heart__icon--full {
+  position: absolute;
+  opacity: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#FF79DA));
+  background: linear-gradient(#9356dc, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-transition: all 600ms;
+  transition: all 600ms;
+}
+.heart__icon:hover .heart__icon--full {
+  opacity: 1;
+}
+.heart__icon:hover .heart__icon--empty {
+  opacity: 0;
+  -webkit-transition: all 600ms;
+  transition: all 600ms;
+}
+
 .header {
   width: 100%;
   padding: 14px 89px 13px 17px;
@@ -452,6 +489,9 @@ body {
   border: none;
   background-color: #ffffff;
 }
+.header .backbtn :hover {
+  text-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+}
 .header a {
   padding: 0 19px 0 16px;
   color: #101010;
@@ -477,6 +517,10 @@ body {
   .header .txtlogo {
     display: none;
   }
+}
+
+.homepage .backbtn {
+  visibility: hidden;
 }
 
 .location {
@@ -737,6 +781,9 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+.restaurants .restaurants__cards a {
+  text-decoration: none;
+}
 .restaurants .restaurants__cards .card {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -802,6 +849,7 @@ body {
           box-sizing: border-box;
   width: 100%;
   height: 77px;
+  color: #000000;
   background-color: #ffffff;
   border-radius: 0 0 15px 15px;
   position: absolute;
@@ -950,40 +998,4 @@ footer .footermenu a h3 {
             justify-content: flex-end;
     gap: 7px;
   }
-}
-.heart__icon {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-right: 16px;
-}
-.heart__icon--empty {
-  position: absolute;
-  color: black;
-}
-.heart__icon--full {
-  position: absolute;
-  opacity: 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#FF79DA));
-  background: linear-gradient(#9356dc, #FF79DA);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  -webkit-transition: all 600ms;
-  transition: all 600ms;
-}
-.heart__icon:hover .heart__icon--full {
-  opacity: 1;
-}
-.heart__icon:hover .heart__icon--empty {
-  opacity: 0;
-  -webkit-transition: all 600ms;
-  transition: all 600ms;
 }/*# sourceMappingURL=style.css.map */

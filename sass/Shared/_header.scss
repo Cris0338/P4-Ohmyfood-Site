@@ -17,6 +17,10 @@
         padding: 0;
         border: none;
         background-color: $white-1;
+
+        & :hover {
+            text-shadow: $shadow_hover;
+        }
     }
 
 
@@ -41,4 +45,8 @@
             display: none;
         }
     }
+}
+
+.homepage .backbtn {
+    visibility: hidden;
 }
