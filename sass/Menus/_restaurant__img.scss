@@ -1,0 +1,33 @@
+.restaurant__img--h {
+    width: 375px;
+    height: 275px;
+    object-fit: contain;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        height: 100%;
+        
+    }
+    
+
+}
+
+.restaurant__img--w {
+    width: 375px;
+    height: 275px;
+    object-fit: contain;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 100%;
+        
+    }
+    
+
+}
