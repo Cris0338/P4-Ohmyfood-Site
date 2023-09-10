@@ -6,7 +6,7 @@ $dot-start: calc((($dot-count / 2 + 1) * ($dot-size + $dot-space)) / 2);
 $animation-time: 2s;
 $animation-distance: 25px;
 
-@keyframes scomparsa {
+@keyframes disappearance {
     0% { opacity: 1; }
     100% { opacity: 0; display: none; }
 }
