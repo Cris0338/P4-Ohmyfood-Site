@@ -279,8 +279,8 @@ body {
 }
 .howto .container .stepstiles a :hover {
   color: #9356dc;
-  -webkit-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
-          box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
 @media (min-width: 1080px) {
@@ -367,8 +367,38 @@ body {
 .restaurants .restaurants__cards .card.three {
   background-image: url(/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
 }
+.restaurants .restaurants__cards .card.three .stamp {
+  display: none;
+}
 .restaurants .restaurants__cards .card.four {
   background-image: url(/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+}
+.restaurants .restaurants__cards .card.four .stamp {
+  display: none;
+}
+.restaurants .restaurants__cards .card .stamp {
+  position: absolute;
+  width: 80px;
+  height: 29px;
+  border-radius: 2px;
+  right: 13px;
+  top: 13px;
+  color: #008766;
+  background-color: #99e2d0;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .restaurants .restaurants__cards .card .txts {
   -webkit-box-sizing: border-box;
@@ -440,6 +470,8 @@ footer {
       -ms-flex-align: start;
           align-items: flex-start;
   gap: 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 footer h2 {
   font-family: "Shrikhand";
