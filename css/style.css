@@ -46,6 +46,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   gap: 42px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .header .backbtn {
   width: 30px;
