@@ -21,49 +21,31 @@
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-
         gap: 18px;
         box-sizing: border-box;
 
-a {
-    text-decoration: none;
-}
+        a {
+            text-decoration: none;
+        }
+
         .card {
             box-sizing: border-box;
-            z-index: 0;
             width: 340px;
             height: 251px;
             border-radius: 15px;
             background-color: $white-1;
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position-y: -53px;
             box-shadow: $shadow_cards;
             position: relative;
+            object-fit: cover;
+            object-position: bottom;
+            overflow: hidden;
 
-            &.one {
-                background-image: url(/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-            }
-
-            &.two {
-                background-image: url(/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
-                background-size: cover;
-                background-position-x: center;
-                background-position-y: 88%;
-            }
-
-            &.three {
-                background-image: url(/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
-                .stamp {
-                    display: none;
-                }
-            }
-
-            &.four {
-                background-image: url(/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
-                .stamp {
-                    display: none;
-                }
+            img {
+                width: 100%;
+                height: auto;
+                position: absolute;
+                top: 57px;
+                transform: translateY(-50%);
             }
 
             .stamp {
@@ -100,7 +82,7 @@ a {
                 justify-content: center;
                 gap: 5px;
 
-                @media (min-width: 1080px) {}
+
 
                 h3 {
                     width: 267px;
@@ -134,10 +116,16 @@ a {
         }
     }
 
-
     @media (min-width: 1080px) {
         .restaurants__cards {
-            flex-direction: row;
+            width: 1080px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            .card {
+                width: 490px;
+            }
         }
     }
+
 }

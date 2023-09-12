@@ -790,38 +790,26 @@ body {
 .restaurants .restaurants__cards .card {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  z-index: 0;
   width: 340px;
   height: 251px;
   border-radius: 15px;
   background-color: #ffffff;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position-y: -53px;
   -webkit-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
   position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+  overflow: hidden;
 }
-.restaurants .restaurants__cards .card.one {
-  background-image: url(/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-}
-.restaurants .restaurants__cards .card.two {
-  background-image: url(/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
-  background-size: cover;
-  background-position-x: center;
-  background-position-y: 88%;
-}
-.restaurants .restaurants__cards .card.three {
-  background-image: url(/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
-}
-.restaurants .restaurants__cards .card.three .stamp {
-  display: none;
-}
-.restaurants .restaurants__cards .card.four {
-  background-image: url(/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
-}
-.restaurants .restaurants__cards .card.four .stamp {
-  display: none;
+.restaurants .restaurants__cards .card img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 57px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 .restaurants .restaurants__cards .card .stamp {
   position: absolute;
@@ -895,10 +883,12 @@ body {
 }
 @media (min-width: 1080px) {
   .restaurants .restaurants__cards {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    width: 1080px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .restaurants .restaurants__cards .card {
+    width: 490px;
   }
 }
 
