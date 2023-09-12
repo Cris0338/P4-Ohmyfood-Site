@@ -15,7 +15,7 @@ $animation-distance: 25px;
     z-index: 9998;
     top: 0;
     left: 0;
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
     background: linear-gradient(-45deg, $violet 1%, $transition_loader 22%, $pink 51%, $transition_loader 83%, $violet 100%);
