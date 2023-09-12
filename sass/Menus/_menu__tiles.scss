@@ -97,7 +97,7 @@
                     font-family: $font-generic;
                     font-size: 15px;
                     font-weight: 300;
-                    
+
                 }
 
             }
@@ -131,7 +131,7 @@
             align-items: center;
         }
 
-        
+
 
         .flex__tile:hover .price {
             transform: translateX(-60px);
@@ -162,6 +162,22 @@
 
 @media (min-width: 1080px) {
     .restaurants__menu {
-        flex-direction: row;
+        width: 1055px;
+        justify-content: center;
+        align-items: center;
+
+        .title__heart {
+            justify-content: center;
+            gap: 24px;
+        }
+
+        .menu {
+            width: 634px;
+            align-content: center
+        }
     }
+
+
+
+
 }

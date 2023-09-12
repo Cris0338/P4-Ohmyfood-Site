@@ -1120,10 +1120,24 @@ body {
 
 @media (min-width: 1080px) {
   .restaurants__menu {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    width: 1055px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .restaurants__menu .title__heart {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 24px;
+  }
+  .restaurants__menu .menu {
+    width: 634px;
+    -ms-flex-line-pack: center;
+        align-content: center;
   }
 }
 footer {
