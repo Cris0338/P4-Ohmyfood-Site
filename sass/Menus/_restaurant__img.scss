@@ -1,33 +1,18 @@
-.restaurant__img--h {
+.restaurant__img {
+    z-index: -1;
     width: 375px;
     height: 275px;
-    object-fit: contain;
+    position: relative;
+    object-fit: cover;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    img {
-        height: 100%;
-        
-    }
-    
-
-}
-
-.restaurant__img--w {
-    width: 375px;
-    height: 275px;
-    object-fit: contain;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
     img {
         width: 100%;
+        height: auto;
+        position: absolute;
         
+        &.portrait {
+            transform: translateY(-25%);
+        }
     }
-    
-
 }
