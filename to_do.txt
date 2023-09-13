@@ -1,2 +1,1 @@
 ellipsis ne marche pas... :(
-probleme avec loader... :(

@@ -79,14 +79,25 @@
             overflow: hidden;
 
             .ellipsis {
-                flex: 1;
+                max-width: 100%;
                 overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-items: flex-start;
+                align-content: space-between;
+
+                h3, h4 {
+                    font-family: $font-generic;
+                    display: inline-block;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                } 
 
                 h3 {
-                    font-family: $font-generic;
                     font-size: 18px;
                     font-weight: 500;
-
 
                     &:after {
                         all: inherit;
@@ -94,10 +105,8 @@
                 }
 
                 h4 {
-                    font-family: $font-generic;
                     font-size: 15px;
                     font-weight: 300;
-
                 }
 
             }
@@ -112,47 +121,36 @@
                 margin-left: 15px;
                 transition: transform 0.3s ease;
             }
-        }
 
-        .flex__tile::before {
-            content: "\f058";
-            font-family: "Font Awesome 6 Free";
-            color: $white-1;
-            width: 60px;
-            height: 100%;
-            background-color: $green-1;
-            position: absolute;
-            top: 0;
-            right: -60px;
-            transition: transform 0.3s ease;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+            .icon {
+                color: $white-1;
+                width: 60px;
+                height: 100%;
+                background-color: $green-1;
+                position: absolute;
+                top: 0;
+                right: -60px;
+                transition: transform 0.3s ease;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
 
+            &:hover .price {
+                transform: translateX(-60px);
+            }
 
+            &:hover .icon {
+                transform: translateX(-60px);
+            }
 
-        .flex__tile:hover .price {
-            transform: translateX(-60px);
-        }
-
-        .flex__tile:hover::before {
-            transform: translateX(-60px);
-        }
-
-        .flex__tile:hover .ellipsis {
-            overflow: hidden;
-            text-overflow: ellipsis;
+            &:hover .ellipsis {
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
         }
     }
-
-
-
-
-
-
-
 }
 
 
@@ -176,8 +174,4 @@
             align-content: center
         }
     }
-
-
-
-
 }

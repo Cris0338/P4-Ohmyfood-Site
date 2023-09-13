@@ -1014,13 +1014,31 @@ body {
   overflow: hidden;
 }
 .restaurants__menu .menu .flex__tile .ellipsis {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  max-width: 100%;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+.restaurants__menu .menu .flex__tile .ellipsis h3, .restaurants__menu .menu .flex__tile .ellipsis h4 {
+  font-family: "Roboto", sans-serif;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .restaurants__menu .menu .flex__tile .ellipsis h3 {
-  font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 500;
 }
@@ -1028,7 +1046,6 @@ body {
   all: inherit;
 }
 .restaurants__menu .menu .flex__tile .ellipsis h4 {
-  font-family: "Roboto", sans-serif;
   font-size: 15px;
   font-weight: 300;
 }
@@ -1049,9 +1066,7 @@ body {
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
 }
-.restaurants__menu .menu .flex__tile::before {
-  content: "\f058";
-  font-family: "Font Awesome 6 Free";
+.restaurants__menu .menu .flex__tile .icon {
   color: #ffffff;
   width: 60px;
   height: 100%;
@@ -1078,7 +1093,7 @@ body {
   -webkit-transform: translateX(-60px);
           transform: translateX(-60px);
 }
-.restaurants__menu .menu .flex__tile:hover::before {
+.restaurants__menu .menu .flex__tile:hover .icon {
   -webkit-transform: translateX(-60px);
           transform: translateX(-60px);
 }
