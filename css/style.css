@@ -420,6 +420,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow-x: hidden;
 }
 
 .btn_gradient {
@@ -1011,11 +1012,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  gap: 24px;
 }
 .restaurants__menu .title__heart h2 {
   display: block;
@@ -1036,11 +1038,13 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-item-align: center;
+      align-self: center;
   gap: 12px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  max-width: 350px;
+  width: 100%;
 }
 .restaurants__menu .menu .h3title {
   display: block;
@@ -1077,7 +1081,6 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   overflow: hidden;
-  max-width: 350px;
 }
 .restaurants__menu .menu .flex__tile .ellipsis {
   overflow: hidden;
