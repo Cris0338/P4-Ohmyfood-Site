@@ -1159,6 +1159,14 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.restaurants__menu .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 
 @media (min-width: 1080px) {
   .restaurants__menu {
