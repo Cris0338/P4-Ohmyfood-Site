@@ -1,0 +1,20 @@
+@import 'gradients';
+
+.btn_gradient {
+    width: 218px;
+    height: 50px;
+    border-radius: 25px;
+    border: 0;
+    font-family: $font-generic;
+    font-size: 16px;
+    font-weight: 500;
+    color: $white-1;
+    background: $btn_normal;
+    box-shadow: $shadow_normal;
+    cursor: pointer;
+
+    &:hover {
+        background: $btn_hover;
+        box-shadow: $shadow_hover
+    }
+}
