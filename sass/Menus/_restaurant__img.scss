@@ -10,17 +10,15 @@
         width: 100%;
         height: auto;
         position: absolute;
-        
-        &.portrait {
-            transform: translateY(-25%);
-        }
+        top: 50%;
+        transform: translateY(-60%);
+
     }
 
     @media (min-width: 1080px) {
         height: 400px;
 
         img {
-            top: 50%;
             transform: translateY(-50%);
         }
         
