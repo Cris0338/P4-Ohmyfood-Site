@@ -1042,13 +1042,13 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-.restaurants__menu .menu h3 {
+.restaurants__menu .menu .h3title {
   display: block;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 300;
 }
-.restaurants__menu .menu h3:after {
+.restaurants__menu .menu .h3title:after {
   content: "";
   display: block;
   width: 40px;
@@ -1069,18 +1069,17 @@ body {
   height: 69px;
   padding: 15px;
   border-radius: 15px;
+  top: 0px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
   position: relative;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   overflow: hidden;
+  max-width: 350px;
 }
 .restaurants__menu .menu .flex__tile .ellipsis {
-  max-width: 100%;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1089,15 +1088,11 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   -ms-flex-line-pack: justify;
       align-content: space-between;
 }
-.restaurants__menu .menu .flex__tile .ellipsis h3, .restaurants__menu .menu .flex__tile .ellipsis h4 {
+.restaurants__menu .menu .flex__tile .ellipsis h3,
+.restaurants__menu .menu .flex__tile .ellipsis h4 {
   font-family: "Roboto", sans-serif;
   display: inline-block;
   overflow: hidden;
@@ -1107,9 +1102,6 @@ body {
 .restaurants__menu .menu .flex__tile .ellipsis h3 {
   font-size: 18px;
   font-weight: 500;
-}
-.restaurants__menu .menu .flex__tile .ellipsis h3:after {
-  all: inherit;
 }
 .restaurants__menu .menu .flex__tile .ellipsis h4 {
   font-size: 15px;
@@ -1127,10 +1119,8 @@ body {
       -ms-flex-align: end;
           align-items: end;
   margin-left: 15px;
-  -webkit-transition: -webkit-transform 0.3s ease;
-  transition: -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 .restaurants__menu .menu .flex__tile .icon {
   color: #ffffff;
@@ -1156,12 +1146,10 @@ body {
           align-items: center;
 }
 .restaurants__menu .menu .flex__tile:hover .price {
-  -webkit-transform: translateX(-60px);
-          transform: translateX(-60px);
+  margin-right: 60px;
 }
 .restaurants__menu .menu .flex__tile:hover .icon {
-  -webkit-transform: translateX(-60px);
-          transform: translateX(-60px);
+  right: 0;
 }
 .restaurants__menu .menu .flex__tile:hover .ellipsis {
   overflow: hidden;
