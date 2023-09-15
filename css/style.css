@@ -1205,45 +1205,75 @@ body {
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
 }
-
-.restaurants__menu .menu:nth-child(3) {
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
+.restaurants__menu .menu:nth-child(2) .flex__tile {
+  -webkit-animation: slideIn 0.2s forwards;
+          animation: slideIn 0.2s forwards;
 }
-
-.restaurants__menu .menu:nth-child(4) {
-  -webkit-animation-delay: 1.2s;
-          animation-delay: 1.2s;
-}
-
-.menu .flex__tile {
-  -webkit-animation: slideIn 0.7s forwards;
-          animation: slideIn 0.7s forwards;
-}
-
-.menu .h3title {
+.restaurants__menu .menu:nth-child(2) .flex__tile:nth-child(2) {
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
 }
-
-.menu .flex__tile:nth-child(2) {
+.restaurants__menu .menu:nth-child(2) .flex__tile:nth-child(3) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+.restaurants__menu .menu:nth-child(2) .flex__tile:nth-child(4) {
   -webkit-animation-delay: 0.8s;
           animation-delay: 0.8s;
 }
+.restaurants__menu .menu:nth-child(2) .flex__tile:nth-child(5) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
 
-.menu .flex__tile:nth-child(3) {
+.restaurants__menu .menu:nth-child(3) {
   -webkit-animation-delay: 1.2s;
           animation-delay: 1.2s;
 }
-
-.menu .flex__tile:nth-child(4) {
+.restaurants__menu .menu:nth-child(3) .flex__tile {
+  -webkit-animation: slideIn 0.4s forwards;
+          animation: slideIn 0.4s forwards;
+}
+.restaurants__menu .menu:nth-child(3) .flex__tile:nth-child(2) {
+  -webkit-animation-delay: 1.4s;
+          animation-delay: 1.4s;
+}
+.restaurants__menu .menu:nth-child(3) .flex__tile:nth-child(3) {
   -webkit-animation-delay: 1.6s;
           animation-delay: 1.6s;
 }
-
-.menu .flex__tile:nth-child(5) {
+.restaurants__menu .menu:nth-child(3) .flex__tile:nth-child(4) {
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
+}
+.restaurants__menu .menu:nth-child(3) .flex__tile:nth-child(5) {
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
+}
+
+.restaurants__menu .menu:nth-child(4) {
+  -webkit-animation-delay: 2.2s;
+          animation-delay: 2.2s;
+}
+.restaurants__menu .menu:nth-child(4) .flex__tile {
+  -webkit-animation: slideIn 0.4s forwards;
+          animation: slideIn 0.4s forwards;
+}
+.restaurants__menu .menu:nth-child(4) .flex__tile:nth-child(2) {
+  -webkit-animation-delay: 2.4s;
+          animation-delay: 2.4s;
+}
+.restaurants__menu .menu:nth-child(4) .flex__tile:nth-child(3) {
+  -webkit-animation-delay: 2.6s;
+          animation-delay: 2.6s;
+}
+.restaurants__menu .menu:nth-child(4) .flex__tile:nth-child(4) {
+  -webkit-animation-delay: 2.8s;
+          animation-delay: 2.8s;
+}
+.restaurants__menu .menu:nth-child(4) .flex__tile:nth-child(5) {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
 }
 
 @media (min-width: 1080px) {
