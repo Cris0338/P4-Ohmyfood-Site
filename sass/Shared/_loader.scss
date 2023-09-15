@@ -21,7 +21,7 @@ $animation-distance: 25px;
     background: linear-gradient(-45deg, $violet 1%, $transition_loader 22%, $pink 51%, $transition_loader 83%, $violet 100%);
     animation-name: disappearance;
     animation-duration: 1s; /* transition time */
-    animation-delay: 1s; /* transition delay after start */
+    animation-delay: 0.1s; /* transition delay after start */
     animation-fill-mode: forwards;
 
     .dots {

@@ -29,8 +29,8 @@
           animation-name: disappearance;
   -webkit-animation-duration: 1s;
           animation-duration: 1s; /* transition time */
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s; /* transition delay after start */
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s; /* transition delay after start */
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -991,8 +991,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -ms-flex-line-pack: center;
       align-content: center;
   gap: 40px;
@@ -1045,6 +1043,7 @@ body {
           box-sizing: border-box;
   max-width: 350px;
   width: 100%;
+  opacity: 0;
 }
 .restaurants__menu .menu .h3title {
   display: block;
@@ -1197,6 +1196,26 @@ body {
             transform: translateY(0);
   }
 }
+.restaurants__menu .menu {
+  -webkit-animation: slideIn 0.7s forwards;
+          animation: slideIn 0.7s forwards;
+}
+
+.restaurants__menu .menu:nth-child(2) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.restaurants__menu .menu:nth-child(3) {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+.restaurants__menu .menu:nth-child(4) {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+
 .menu .flex__tile {
   -webkit-animation: slideIn 0.7s forwards;
           animation: slideIn 0.7s forwards;
