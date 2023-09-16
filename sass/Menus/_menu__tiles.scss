@@ -173,7 +173,7 @@
     }
 }
 
-// restaurants__menu > menu
+// restaurants__menu > menu > flex__tile
 
 .restaurants__menu .menu {
     animation: slideIn 0.7s forwards;
@@ -251,32 +251,7 @@
         }
 }
 
-// meun > h3title + flex__tile
-
-// .menu .flex__tile {
-//     animation: slideIn 1s forwards;
-// }
-
-// .menu .h3title {
-//     animation-delay: 0.4s;
-// }
-
-// .menu .flex__tile:nth-child(2) {
-//     animation-delay: 0.8s;
-// }
-
-// .menu .flex__tile:nth-child(3) {
-//     animation-delay: 1.2s;
-// }
-
-// .menu .flex__tile:nth-child(4) {
-//     animation-delay: 1.6s;
-// }
-
-// .menu .flex__tile:nth-child(5) {
-//     animation-delay: 2s;
-// }
-
+// Media section
 
 @media (min-width: 1080px) {
     .restaurants__menu {

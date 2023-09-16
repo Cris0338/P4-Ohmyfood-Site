@@ -23,6 +23,7 @@
         flex-wrap: wrap;
         gap: 18px;
         box-sizing: border-box;
+        transition: all 0.5s ease-in-out;
 
         a {
             text-decoration: none;
@@ -39,6 +40,7 @@
             object-fit: cover;
             object-position: bottom;
             overflow: hidden;
+            transition: all 0.5s ease-in-out;
 
             img {
                 width: 100%;

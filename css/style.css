@@ -842,6 +842,8 @@ body {
   gap: 18px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .restaurants .restaurants__cards a {
   text-decoration: none;
@@ -861,6 +863,8 @@ body {
   -o-object-position: bottom;
      object-position: bottom;
   overflow: hidden;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .restaurants .restaurants__cards .card img {
   width: 100%;
@@ -959,6 +963,8 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   overflow: hidden;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .restaurant__img img {
   width: 100%;
