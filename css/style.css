@@ -724,6 +724,7 @@ body {
           flex-direction: column;
 }
 .howto .container .stepstiles .circle {
+  color: #ffffff;
   position: absolute;
   margin-top: 24px;
   margin-left: 0px;
@@ -743,6 +744,7 @@ body {
   border-radius: 50%;
 }
 .howto .container .stepstiles a {
+  font-family: "Roboto", sans-serif;
   text-decoration: none;
   color: #000000;
 }
@@ -773,6 +775,7 @@ body {
 }
 .howto .container .stepstiles a .tiles i {
   width: 13px;
+  color: #ffffff;
 }
 .howto .container .stepstiles a :hover {
   color: #9356dc;

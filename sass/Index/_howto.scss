@@ -29,6 +29,7 @@
 
 
             .circle {
+                color: $white-1;
                 position: absolute;
                 margin-top: 24px;
                 margin-left: 0px;
@@ -43,6 +44,7 @@
             }
 
             a {
+                font-family: $font-generic;
                 text-decoration: none;
                 color: $black-1;
 
@@ -64,6 +66,7 @@
 
                     i {
                         width: 13px;
+                        color: $white-1;
                     }
                 }
 
