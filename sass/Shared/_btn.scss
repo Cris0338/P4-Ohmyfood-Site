@@ -12,9 +12,10 @@
     background: $btn_normal;
     box-shadow: $shadow_normal;
     cursor: pointer;
+    transition: all 0.5s;
 
     &:hover {
-        background: $btn_hover;
+        opacity: 0.8;
         box-shadow: $shadow_hover
     }
 }

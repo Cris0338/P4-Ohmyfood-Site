@@ -436,9 +436,11 @@ body {
   -webkit-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .btn_gradient:hover {
-  background: linear-gradient(21deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(-21deg, #9356dc, #FF79DA);
+  opacity: 0.8;
   -webkit-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
           box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
 }
@@ -777,6 +779,8 @@ body {
           box-sizing: border-box;
   -webkit-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .howto .container .stepstiles a .tiles i {
   width: 13px;
@@ -1300,7 +1304,7 @@ body {
     gap: 24px;
   }
   .restaurants__menu .menu {
-    width: 634px;
+    max-width: 634px;
     -ms-flex-line-pack: center;
         align-content: center;
   }
