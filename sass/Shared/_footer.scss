@@ -32,9 +32,10 @@ footer {
             justify-content: flex-start;
             gap: 11px;
             text-decoration: none;
-
+            
             &.large {
                 width: 191px;
+                align-items: center;
             }
 
             &.smal {

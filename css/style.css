@@ -1366,6 +1366,9 @@ footer .footermenu a {
 }
 footer .footermenu a.large {
   width: 191px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 footer .footermenu a.smal {
   width: 153px;
