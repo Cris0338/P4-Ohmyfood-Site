@@ -482,7 +482,7 @@ body {
 
 .header {
   width: 100%;
-  padding: 14px 89px 13px 17px;
+  padding: 30px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -509,6 +509,8 @@ body {
   padding: 0;
   border: none;
   background-color: #ffffff;
+  position: absolute;
+  left: 17px;
 }
 .header a {
   padding: 0 19px 0 16px;
@@ -525,6 +527,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.header a img {
+  height: 34px;
 }
 @media (max-width: 1079px) {
   .header .imglogo {
@@ -857,10 +862,6 @@ body {
   -webkit-box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
   position: relative;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: bottom;
-     object-position: bottom;
   overflow: hidden;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
