@@ -787,6 +787,8 @@ body {
 .howto .container .stepstiles a .tiles i {
   color: #7E7E7E;
   width: 13px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .howto .container .stepstiles a:hover, .howto .container .stepstiles a:hover i {
   color: #9356dc;
