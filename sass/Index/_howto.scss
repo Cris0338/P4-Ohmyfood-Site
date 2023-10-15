@@ -47,6 +47,8 @@
             a {
                 text-decoration: none;
                 color: $black-1;
+                font-size: 16px;
+                font-weight: 500;
 
                 .tiles {
                     width: 322.5px;
@@ -71,7 +73,8 @@
                     }
                 }
 
-                & :hover {
+                &:hover,
+                &:hover i {
                     color: $violet;
                     box-shadow: $shadow_howto_hover;
                 }
